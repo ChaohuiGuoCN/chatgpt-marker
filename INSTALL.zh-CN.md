@@ -1,10 +1,12 @@
 [English](INSTALL.md) | **中文**
 
-# 安装与使用 · v0.5.1
+# 安装与使用 · v0.6.0
 
-## DMG 测试安装包
+**Chrome 用户：**请看 [Chrome ZIP 安装说明](INSTALL-CHROME.zh-CN.md)。以下步骤适用于 Mac Safari。
 
-下载 **ChatGPT-Marker-Safari-v0.5.1-unsigned.dmg**。这是免费测试包，没有 Apple 开发者证书签名和公证；仅使用本地临时签名（ad-hoc），让 Apple 芯片能够运行程序。
+## Safari DMG 测试安装包
+
+下载 **ChatGPT-Marker-Safari-v0.6.0-unsigned.dmg**。这是免费测试包，没有 Apple 开发者证书签名和公证；仅使用本地临时签名（ad-hoc），让 Apple 芯片能够运行程序。
 
 安装目标：macOS 14.2+、Safari 17.2+。包含 Apple 芯片与 Intel 两种架构。旧系统与 Intel 尚未实机验证；不支持 iPhone / iPad。
 
@@ -60,7 +62,7 @@
 
 ## ZIP 备用安装方式
 
-**ChatGPT-Marker-Safari-v0.5.1.zip** 仍可用作临时扩展测试：解压后，在 Safari 设置 → 开发者 → 添加临时扩展中选择直接包含 `manifest.json` 的 ChatGPT-Marker 文件夹。这种安装方式在退出 Safari 或 24 小时后会被移除。日常测试优先使用上面的 DMG。
+**ChatGPT-Marker-Safari-v0.6.0.zip** 仍可用作临时扩展测试：解压后，在 Safari 设置 → 开发者 → 添加临时扩展中选择直接包含 `manifest.json` 的 ChatGPT-Marker 文件夹。这种安装方式在退出 Safari 或 24 小时后会被移除。日常测试优先使用上面的 DMG。
 
 ## 官方说明
 

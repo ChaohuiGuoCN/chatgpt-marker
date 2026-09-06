@@ -1,8 +1,12 @@
 **English** | [中文](INSTALL.zh-CN.md)
 
-# Installation and use · v0.5.1
+# Installation and use · v0.6.0
 
-Download **ChatGPT-Marker-Safari-v0.5.1-unsigned.dmg**. This free preview has no Apple developer signature or notarization. Local ad-hoc signing allows it to run on Apple silicon.
+**Chrome users:** follow the [Chrome ZIP installation guide](INSTALL-CHROME.md). The instructions below are for Safari on Mac.
+
+## Safari on Mac
+
+Download **ChatGPT-Marker-Safari-v0.6.0-unsigned.dmg**. This free preview has no Apple developer signature or notarization. Local ad-hoc signing allows it to run on Apple silicon.
 
 Targets macOS 14.2+ and Safari 17.2+. Includes Apple silicon and Intel builds. Older systems and Intel Macs have not been tested on hardware. iPhone and iPad are not supported.
 
@@ -60,7 +64,7 @@ Before uninstalling, back up, disable the extension in Safari, remove the app an
 
 ## Alternative ZIP installation
 
-**ChatGPT-Marker-Safari-v0.5.1.zip** can be loaded temporarily. Extract it, then use Safari Settings → Developer → Add Temporary Extension and select the ChatGPT-Marker folder containing `manifest.json`. Safari removes this temporary installation after quitting or 24 hours. Prefer the DMG for everyday testing.
+**ChatGPT-Marker-Safari-v0.6.0.zip** can be loaded temporarily. Extract it, then use Safari Settings → Developer → Add Temporary Extension and select the ChatGPT-Marker folder containing `manifest.json`. Safari removes this temporary installation after quitting or 24 hours. Prefer the DMG for everyday testing.
 
 ## Official documentation
 

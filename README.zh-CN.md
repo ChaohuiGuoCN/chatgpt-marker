@@ -4,11 +4,11 @@
 
 **回答太长，先划重点；有疑问或不同想法，就地批注；多处看不懂，勾选后一起追问。**
 
-对话荧光笔是给 Mac Safari 使用的 ChatGPT 扩展，让你在原文上标记重点、留下自己的问题，再把选中的原文和批注一次复制或整理到对话框。也可以把**整段对话或单条回复导出为 PDF，保留公式、高亮和完整批注**。
+对话荧光笔支持电脑版 Chrome 和 Mac Safari，两个版本功能一致，让你在原文上标记重点、留下自己的问题，再把选中的原文和批注一次复制或整理到对话框。也可以把**整段对话或单条回复导出为 PDF，保留公式、高亮和完整批注**。
 
-[下载与功能示例](https://chatgpt-marker.chaohui-97.chatgpt.site) · [下载 DMG 测试安装包](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.5.1/ChatGPT-Marker-Safari-v0.5.1-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
+[下载与功能示例](https://chatgpt-marker.chaohui-97.chatgpt.site) · [下载 Chrome ZIP](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.6.0/ChatGPT-Marker-Chrome-v0.6.0.zip) · [下载 Safari DMG](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.6.0/ChatGPT-Marker-Safari-v0.6.0-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
 
-当前版本：**v0.5.1 · 免费 DMG 测试版**，将应用拖入“应用程序”后启用 Safari 扩展。未使用 Apple 开发者证书签名、未公证；Safari 每次退出后仍需重新允许未签名扩展。
+当前版本：**v0.6.0 · Chrome + Safari**。Chrome 解压 ZIP 后通过开发者模式加载；Safari 安装未签名 DMG，完全退出后仍需重新允许未签名扩展。
 
 ## 三个常见问题，三个对应的办法
 
@@ -101,7 +101,7 @@ ChatGPT 从基础语法、开发工具，一直讲到学习安排和测试方法
 | **整段对话**：保留来回讨论 | 荧光笔列表 → 设置 → 导出本段对话 PDF | 已加载的提问和回答、公式、表格、代码、来源链接、高亮与完整批注 |
 | **单条回复**：只保存一条有用的回答 | 点击这条回复下方的“分享” → 导出该回复 PDF | 仅这条回复的正文、公式、高亮与批注，不带其他回复 |
 
-导出时会打开 Safari 打印窗口，选择 **PDF → 存储为 PDF**。无需创建公开分享链接。
+Chrome 打印窗口选择 **目标打印机 → 另存为 PDF**；Safari 选择 **PDF → 存储为 PDF**。无需创建公开分享链接。
 
 **虚构示例：**“请解释二次方程的求根公式。”把“先计算判别式，再判断实数根的数量”标黄，在旁边批注“先算 Δ，再代入求根公式”。导出的 PDF 会保留排版后的分数、根号、黄色重点和这条批注。
 
@@ -109,14 +109,14 @@ ChatGPT 从基础语法、开发工具，一直讲到学习安排和测试方法
 
 ![实际导出的 PDF：保留公式、高亮与批注，内容为虚构示例](https://chatgpt-marker.chaohui-97.chatgpt.site/samples/pdf-preview.png)
 
-v0.5.1 将常见公式重新排版，字体随扩展提供，不依赖外部公式服务；无法识别的公式保留可读取的内容并提示。长对话请先向上滚动加载正文，图片需要原图可访问。JSON 备份用于恢复可继续编辑的笔记，PDF 用于阅读、打印和分享。
+v0.6.0 将常见公式重新排版，字体随扩展提供，不依赖外部公式服务；无法识别的公式保留可读取的内容并提示。长对话请先向上滚动加载正文，图片需要原图可访问。JSON 备份用于恢复可继续编辑的笔记，PDF 用于阅读、打印和分享。
 
 ## English / 中文
 
 首次打开默认英文；手动切换后会记住你的选择。
 
 - 网站：在顶部点击“中文 / English”，也可使用 `?lang=en` 或 `?lang=zh` 链接。
-- 插件：荧光笔列表 → 设置 → 界面语言，或在 Safari 工具栏的插件弹窗中切换。选择会保存并在插件标签页之间同步。
+- 插件：荧光笔列表 → 设置 → 界面语言，或在 浏览器工具栏的插件弹窗中切换。选择会保存并在插件标签页之间同步。
 - PDF 预览：语言选择器可切换生成的标题、说明与打印提示。
 - Mac 安装应用与安装说明：顶部切换语言；应用和网站分别记住各自的选择。
 - GitHub：使用每份文档顶部的语言链接。
@@ -125,7 +125,21 @@ v0.5.1 将常见公式重新排版，字体随扩展提供，不依赖外部公�
 
 ## 下载安装
 
-下载 **ChatGPT-Marker-Safari-v0.5.1-unsigned.dmg**。不要下载 GitHub 自动生成的 “Source code” 文件。
+### Chrome
+
+1. 下载 **ChatGPT-Marker-Chrome-v0.6.0.zip**，解压后将 **ChatGPT-Marker-Chrome** 文件夹放在长期保留的位置。
+2. 打开 `chrome://extensions/`，启用右上角“开发者模式”，点击“加载已解压的扩展程序”。
+3. 选择直接包含 `manifest.json` 的文件夹，再刷新已保存的 ChatGPT 对话。
+
+安装目标为 macOS、Windows、Linux 上的 Chrome 105+，本版尚未完成实机验证；暂不支持手机 Chrome。当前未上架 Chrome 应用商店。请保留安装文件夹，更新时重新加载；没有 Safari 临时扩展的 24 小时到期限制。
+
+**迁移 Safari 笔记：**在 Safari 导出 JSON 备份，再到 Chrome 恢复。两个浏览器之间不会自动同步。
+
+[Chrome 详细安装说明](INSTALL-CHROME.zh-CN.md)
+
+### Mac Safari
+
+下载 **ChatGPT-Marker-Safari-v0.6.0-unsigned.dmg**。不要下载 GitHub 自动生成的 “Source code” 文件。
 
 1. 打开 DMG，把 **ChatGPT Marker.app** 拖入 **Applications（应用程序）**，然后弹出磁盘映像。
 2. 从“应用程序”打开它。若 macOS 阻止首次打开，进入 **系统设置 → 隐私与安全性 → 仍要打开**，按系统提示确认。
@@ -147,6 +161,6 @@ PDF：打开荧光笔列表 → 右上角设置 → 导出本段对话 PDF。单
 
 整段 PDF 只包含页面已加载的消息和保存的笔记；较长对话请先向上滚动加载。常见公式会重新排版；无法识别的公式保留可读取的内容并提示。图片需要原图可访问。
 
-这是独立项目，与 OpenAI、ChatGPT 或 Apple 无隶属关系。此仓库用于发布运行文件和说明，不包含开发源码，也未授予开源许可证。浏览器扩展的运行文件包含 JavaScript。
+这是独立项目，与 OpenAI、ChatGPT、Google 或 Apple 无隶属关系。此仓库用于发布运行文件和说明，不包含开发源码，也未授予开源许可证。浏览器扩展的运行文件包含 JavaScript。
 
 公式排版使用 KaTeX，第三方许可见安装包中的 `katex/LICENSE`（MIT 许可）；这不改变本项目的源码发布范围。

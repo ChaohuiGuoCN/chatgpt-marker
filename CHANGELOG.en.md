@@ -2,6 +2,15 @@
 
 # Changelog
 
+## v0.6.0 · September 7, 2026 · Chrome support
+
+- Added a desktop Chrome ZIP using the same feature code as Safari: highlights, notes, gestures, laser pointer, collection, backups and both PDF export modes.
+- Fixed the PDF preview to use Chrome extension storage as well as Safari storage.
+- Kept local formula rendering and English-by-default language switching.
+- Added Chrome installation and cross-browser backup instructions in English and Chinese.
+- Added separate Chrome and Safari downloads on the website.
+- Validation: 74 automated tests passed, including Chrome and Safari PDF-preview and popup integration checks. Chrome hardware testing is pending.
+
 ## v0.5.1 · September 6, 2026 · English by default
 
 - English is now the initial language for the website, extension, Safari popup, PDF preview, Mac app and installation guide.

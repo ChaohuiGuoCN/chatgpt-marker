@@ -4,11 +4,11 @@
 
 **Long answers? Highlight the point. Questions or disagreement? Add a note. Several things unclear? Collect them into one follow-up.**
 
-ChatGPT Marker is a Safari extension for Mac. Highlight text in ChatGPT, keep your thoughts beside the source, and copy selected quotes and notes together or add them to your draft. You can also **export a conversation or a single reply as a PDF with formulas, highlights and complete notes**.
+ChatGPT Marker is a desktop Chrome extension and a Safari extension for Mac. Both versions share the same features. Highlight text in ChatGPT, keep your thoughts beside the source, and copy selected quotes and notes together or add them to your draft. You can also **export a conversation or a single reply as a PDF with formulas, highlights and complete notes**.
 
-[Website and examples](https://chatgpt-marker.chaohui-97.chatgpt.site/?lang=en) · [Download DMG preview](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.5.1/ChatGPT-Marker-Safari-v0.5.1-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
+[Website and examples](https://chatgpt-marker.chaohui-97.chatgpt.site/?lang=en) · [Download Chrome ZIP](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.6.0/ChatGPT-Marker-Chrome-v0.6.0.zip) · [Download Safari DMG preview](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.6.0/ChatGPT-Marker-Safari-v0.6.0-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
 
-Current version: **v0.5.1 · Free DMG preview**. Move the app to Applications, then enable the extension in Safari. This preview has no Apple developer signature or notarization. Safari requires unsigned-extension permission again after every full quit.
+Current version: **v0.6.0 · Chrome + Safari**. Chrome: extract the ZIP and load the folder in developer mode. Safari: install the Mac app from the unsigned DMG; unsigned-extension permission must be renewed after fully quitting Safari.
 
 ## Three common problems, three practical answers
 
@@ -99,7 +99,7 @@ Save an explanation for review, share a plan or archive a discussion without tak
 | **A conversation** | Highlights → Settings → Export conversation PDF | Loaded questions and answers, formulas, tables, code, source links, highlights and complete notes |
 | **One reply** | Share below that reply → Export this reply as PDF | Only that reply’s content, formulas, highlights and notes |
 
-In Safari’s print dialog, choose **PDF → Save as PDF**. The extension does not create a public share link.
+In Chrome, choose **Destination → Save as PDF**. In Safari, choose **PDF → Save as PDF**. The extension does not create a public share link.
 
 **Fictional example:** ask for an explanation of the quadratic formula. Highlight “Calculate the discriminant first to find the number of real roots” and add “Find Δ first, then use the quadratic formula.” The PDF keeps the typeset fractions and square roots, yellow highlight and note.
 
@@ -114,7 +114,7 @@ Common formulas are typeset locally with bundled fonts. Unrecognized formulas re
 English is the default on first use. A language you choose manually is remembered.
 
 - **Website:** use 中文 / English in the header. The URL can include `?lang=en` or `?lang=zh`.
-- **Extension:** open Highlights → Settings → Interface language, or use the Safari toolbar popup. The preference is saved and shared across extension tabs.
+- **Extension:** open Highlights → Settings → Interface language, or use the browser toolbar popup. The preference is saved and shared across extension tabs.
 - **PDF preview:** use its language selector to change generated headings and print instructions.
 - **Mac app and installation guide:** use 中文 / English at the top. The app and website keep their own preferences.
 - **GitHub:** use the language links at the top of each document.
@@ -123,7 +123,21 @@ Language changes affect interface labels and collection-format headings. **Your 
 
 ## Download and install
 
-Download **ChatGPT-Marker-Safari-v0.5.1-unsigned.dmg**, not GitHub’s automatically generated “Source code” files.
+### Chrome
+
+1. Download **ChatGPT-Marker-Chrome-v0.6.0.zip**, extract it and keep the **ChatGPT-Marker-Chrome** folder in a permanent location.
+2. Open `chrome://extensions/`, enable **Developer mode**, then click **Load unpacked**.
+3. Select the folder directly containing `manifest.json`, then refresh a saved ChatGPT conversation.
+
+Desktop Chrome 105+ on macOS, Windows and Linux; hardware testing is pending. No mobile Chrome support. This preview is not in the Chrome Web Store. Keep the installed folder; reload it after updates. There is no Safari-style 24-hour expiration.
+
+**Move Safari notes to Chrome:** export a JSON backup in Safari, then restore it in Chrome. Notes do not sync automatically between browsers.
+
+[Full Chrome installation guide](INSTALL-CHROME.md)
+
+### Safari on Mac
+
+Download **ChatGPT-Marker-Safari-v0.6.0-unsigned.dmg**, not GitHub’s automatically generated “Source code” files.
 
 1. Open the DMG, drag **ChatGPT Marker.app** to **Applications**, then eject the disk image.
 2. Open the app from Applications. If macOS blocks it, go to **System Settings → Privacy & Security → Open Anyway** and follow the system prompts.
@@ -141,6 +155,6 @@ Targets macOS 14.2+ / Safari 17.2+. Includes Apple silicon and Intel builds; old
 
 ## Project and licensing
 
-An independent project, not affiliated with OpenAI, ChatGPT or Apple. This repository distributes runtime files and documentation, not development source code, and does not grant an open-source license. Browser extension runtime files contain JavaScript.
+An independent project, not affiliated with OpenAI, ChatGPT, Google or Apple. This repository distributes runtime files and documentation, not development source code, and does not grant an open-source license. Browser extension runtime files contain JavaScript.
 
 Formula rendering uses KaTeX. Its MIT license is included in `katex/LICENSE` in the package and does not change this project’s source distribution scope.

@@ -2,7 +2,7 @@
 
 # Privacy notice
 
-Applies to ChatGPT Marker v0.5.1. Updated September 6, 2026.
+Applies to ChatGPT Marker v0.6.0. Updated September 7, 2026.
 
 - On ChatGPT pages you authorize, the extension reads conversation text, your selection and page structure to display highlights, locate notes and prepare PDFs.
 - Saved data includes selected text, surrounding context, notes, colors, conversation URLs, location information, tool position and interface language. This stays in local extension storage; there is no cloud sync.
