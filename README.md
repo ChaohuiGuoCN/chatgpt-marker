@@ -4,9 +4,9 @@
 
 对话荧光笔是给 Mac Safari 使用的 ChatGPT 扩展，让你在原文上标记重点、留下自己的问题，再把选中的原文和批注一次复制或整理到对话框。也可以把**整段对话或单条回复导出为 PDF，保留公式、高亮和完整批注**。
 
-[下载与功能示例](https://chatgpt-marker.chaohui-97.chatgpt.site) · [下载 DMG 测试安装包](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.4.3/ChatGPT-Marker-Safari-v0.4.3-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
+[下载与功能示例](https://chatgpt-marker.chaohui-97.chatgpt.site) · [下载 DMG 测试安装包](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.4.4/ChatGPT-Marker-Safari-v0.4.4-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
 
-当前版本：**v0.4.3 · 免费 DMG 测试版**，将应用拖入“应用程序”后启用 Safari 扩展。未使用 Apple 开发者证书签名、未公证；Safari 每次退出后仍需重新允许未签名扩展。
+当前版本：**v0.4.4 · 免费 DMG 测试版**，将应用拖入“应用程序”后启用 Safari 扩展。未使用 Apple 开发者证书签名、未公证；Safari 每次退出后仍需重新允许未签名扩展。
 
 ## 三个常见问题，三个对应的办法
 
@@ -107,11 +107,11 @@ ChatGPT 从基础语法、开发工具，一直讲到学习安排和测试方法
 
 ![实际导出的 PDF：保留公式、高亮与批注，内容为虚构示例](https://chatgpt-marker.chaohui-97.chatgpt.site/samples/pdf-preview.png)
 
-v0.4.3 将常见公式重新排版，字体随扩展提供，不依赖外部公式服务；无法识别的公式保留源码并提示。长对话请先向上滚动加载正文，图片需要原图可访问。JSON 备份用于恢复可继续编辑的笔记，PDF 用于阅读、打印和分享。
+v0.4.4 将常见公式重新排版，字体随扩展提供，不依赖外部公式服务；无法识别的公式保留可读取的内容并提示。长对话请先向上滚动加载正文，图片需要原图可访问。JSON 备份用于恢复可继续编辑的笔记，PDF 用于阅读、打印和分享。
 
 ## 下载安装
 
-下载 **ChatGPT-Marker-Safari-v0.4.3-unsigned.dmg**。不要下载 GitHub 自动生成的 “Source code” 文件。
+下载 **ChatGPT-Marker-Safari-v0.4.4-unsigned.dmg**。不要下载 GitHub 自动生成的 “Source code” 文件。
 
 1. 打开 DMG，把 **ChatGPT Marker.app** 拖入 **Applications（应用程序）**，然后弹出磁盘映像。
 2. 从“应用程序”打开它。若 macOS 阻止首次打开，进入 **系统设置 → 隐私与安全性 → 仍要打开**，按系统提示确认。
@@ -131,7 +131,7 @@ v0.4.3 将常见公式重新排版，字体随扩展提供，不依赖外部公�
 
 PDF：打开荧光笔列表 → 右上角设置 → 导出本段对话 PDF。单条回复：点击回复下方分享 → 导出该回复 PDF。在打印窗口选择 **PDF → 存储为 PDF**，扩展不会创建公开分享链接。
 
-整段 PDF 只包含页面已加载的消息和保存的笔记；较长对话请先向上滚动加载。常见公式会重新排版；无法识别的公式保留源码并提示。图片需要原图可访问。
+整段 PDF 只包含页面已加载的消息和保存的笔记；较长对话请先向上滚动加载。常见公式会重新排版；无法识别的公式保留可读取的内容并提示。图片需要原图可访问。
 
 这是独立项目，与 OpenAI、ChatGPT 或 Apple 无隶属关系。此仓库用于发布运行文件和说明，不包含开发源码，也未授予开源许可证。浏览器扩展的运行文件包含 JavaScript。
 
