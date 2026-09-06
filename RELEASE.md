@@ -1,4 +1,4 @@
-# 对话荧光笔 v0.4.2 · 免费 DMG 测试安装包
+# 对话荧光笔 v0.4.3 · PDF 公式修复 · 免费 DMG 测试版
 
 **回答太长，先划重点；有疑问或不同想法，就地批注；多处看不懂，勾选后一起追问。**
 
@@ -14,7 +14,7 @@
 
 ## 下载与安装
 
-下载 Assets 中的 **ChatGPT-Marker-Safari-v0.4.2-unsigned.dmg**，打开后把 **ChatGPT Marker.app** 拖进“应用程序”。首次被拦截时，可使用系统设置 → 隐私与安全性 → 仍要打开。随后在 Safari 设置中允许未签名扩展，启用对话荧光笔并授权访问 chatgpt.com。
+下载 Assets 中的 **ChatGPT-Marker-Safari-v0.4.3-unsigned.dmg**，打开后把 **ChatGPT Marker.app** 拖进“应用程序”。首次被拦截时，可使用系统设置 → 隐私与安全性 → 仍要打开。随后在 Safari 设置中允许未签名扩展，启用对话荧光笔并授权访问 chatgpt.com。
 
 [完整安装与旧版迁移指南](https://github.com/ChaohuiGuoCN/chatgpt-marker/blob/main/INSTALL.md)
 
@@ -26,12 +26,23 @@
 
 **其他附件：** ZIP 备用临时扩展（退出或 24 小时后会移除）、安装指南、隐私说明、SHA-256 校验值。不要下载 GitHub 自动生成的 “Source code” 文件。
 
-## 验证情况
+## PDF 现在可以保留公式排版
 
-已验证 DMG 完整性、挂载安装、应用启动、Safari 识别为已安装扩展、双架构和资源一致性。原有 56 项自动化测试通过，扩展与网站均通过类型检查和构建。新 DMG 尚未完成启用后的真实网页验证：本机 Safari 未接受自动化点击启用，需要手动勾选。
+修复公式在 PDF 中缺失或只显示源码的问题。常见分数、根号、积分、矩阵和多行公式会重新排版，字体随扩展提供。无法识别的公式保留源码并提示。
 
-## 功能
+- **整段对话**：荧光笔列表 → 设置 → 导出本段对话 PDF。
+- **单条回复**：回复下方“分享” → 导出该回复 PDF。
 
-保留四色高亮、侧边批注、批量复制与追加草稿、PDF 导出、激光笔、JSON 备份。PDF 保留标记、完整批注和来源链接。
+两种方式都保留所属高亮与完整批注。在 Safari 打印窗口选择“PDF → 存储为 PDF”。
+
+[整段对话 PDF 示例](https://chatgpt-marker.chaohui-97.chatgpt.site/samples/conversation.pdf) · [单条回复 PDF 示例](https://chatgpt-marker.chaohui-97.chatgpt.site/samples/reply.pdf) · [网站功能演示](https://chatgpt-marker.chaohui-97.chatgpt.site/#pdf)
+
+示例为虚构内容，通过本机 Safari 实际导出，不包含真实用户对话。
+
+## 验证与限制
+
+62 项自动化测试通过，包含公式提取、重新排版、源码回退和单条回复范围检查。使用 Safari 打印流程导出虚构对话并检查公式、高亮与批注排版。完整 DMG 的真实 ChatGPT 页面验证仍受手动启用步骤限制；旧系统与 Intel 尚未实机验证。
+
+整段 PDF 只包括页面已加载的对话；无法识别的公式保留源码，图片需要原图可访问。
 
 [版本记录](https://github.com/ChaohuiGuoCN/chatgpt-marker/blob/main/CHANGELOG.md) · [隐私说明](https://github.com/ChaohuiGuoCN/chatgpt-marker/blob/main/PRIVACY.md)
