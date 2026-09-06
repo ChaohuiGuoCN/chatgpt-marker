@@ -4,7 +4,7 @@
 
 **当前版本：v0.4.1 · 开发预览版**
 
-[下载 Safari 预览版](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.4.1/ChatGPT-Marker-Safari-v0.4.1.zip) · [下载网站与安装指南](https://chatgpt-marker.garden-chord-3419.chatgpt.site) · [所有版本](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
+[下载 Safari 预览版](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.4.1/ChatGPT-Marker-Safari-v0.4.1.zip) · [下载网站与安装指南](https://chatgpt-marker.chaohui-97.chatgpt.site) · [所有版本](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
 
 > 这是需要手动加载的临时扩展，尚未签名或公证，不是双击安装的 macOS 应用。Safari 在退出或 24 小时后会移除临时扩展，使用期间请定期导出 JSON 备份。
 
