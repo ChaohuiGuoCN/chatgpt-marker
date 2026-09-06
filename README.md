@@ -1,12 +1,14 @@
+**中文** | [English](README.en.md)
+
 # 对话荧光笔 · ChatGPT Marker
 
 **回答太长，先划重点；有疑问或不同想法，就地批注；多处看不懂，勾选后一起追问。**
 
 对话荧光笔是给 Mac Safari 使用的 ChatGPT 扩展，让你在原文上标记重点、留下自己的问题，再把选中的原文和批注一次复制或整理到对话框。也可以把**整段对话或单条回复导出为 PDF，保留公式、高亮和完整批注**。
 
-[下载与功能示例](https://chatgpt-marker.chaohui-97.chatgpt.site) · [下载 DMG 测试安装包](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.4.4/ChatGPT-Marker-Safari-v0.4.4-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
+[下载与功能示例](https://chatgpt-marker.chaohui-97.chatgpt.site) · [下载 DMG 测试安装包](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.5.0/ChatGPT-Marker-Safari-v0.5.0-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
 
-当前版本：**v0.4.4 · 免费 DMG 测试版**，将应用拖入“应用程序”后启用 Safari 扩展。未使用 Apple 开发者证书签名、未公证；Safari 每次退出后仍需重新允许未签名扩展。
+当前版本：**v0.5.0 · 免费 DMG 测试版**，将应用拖入“应用程序”后启用 Safari 扩展。未使用 Apple 开发者证书签名、未公证；Safari 每次退出后仍需重新允许未签名扩展。
 
 ## 三个常见问题，三个对应的办法
 
@@ -107,11 +109,21 @@ ChatGPT 从基础语法、开发工具，一直讲到学习安排和测试方法
 
 ![实际导出的 PDF：保留公式、高亮与批注，内容为虚构示例](https://chatgpt-marker.chaohui-97.chatgpt.site/samples/pdf-preview.png)
 
-v0.4.4 将常见公式重新排版，字体随扩展提供，不依赖外部公式服务；无法识别的公式保留可读取的内容并提示。长对话请先向上滚动加载正文，图片需要原图可访问。JSON 备份用于恢复可继续编辑的笔记，PDF 用于阅读、打印和分享。
+v0.5.0 将常见公式重新排版，字体随扩展提供，不依赖外部公式服务；无法识别的公式保留可读取的内容并提示。长对话请先向上滚动加载正文，图片需要原图可访问。JSON 备份用于恢复可继续编辑的笔记，PDF 用于阅读、打印和分享。
+
+## 中文 / English
+
+- 网站：在顶部点击“中文 / English”，也可使用 `?lang=en` 或 `?lang=zh` 链接。
+- 插件：荧光笔列表 → 设置 → 界面语言，或在 Safari 工具栏的插件弹窗中切换。选择会保存并在插件标签页之间同步。
+- PDF 预览：语言选择器可切换生成的标题、说明与打印提示。
+- Mac 安装应用与安装说明：顶部切换语言；应用和网站分别记住各自的选择。
+- GitHub：使用每份文档顶部的语言链接。
+
+切换只改变界面与整理格式中的标题，**不会翻译对话原文、你写下的批注或公式**。
 
 ## 下载安装
 
-下载 **ChatGPT-Marker-Safari-v0.4.4-unsigned.dmg**。不要下载 GitHub 自动生成的 “Source code” 文件。
+下载 **ChatGPT-Marker-Safari-v0.5.0-unsigned.dmg**。不要下载 GitHub 自动生成的 “Source code” 文件。
 
 1. 打开 DMG，把 **ChatGPT Marker.app** 拖入 **Applications（应用程序）**，然后弹出磁盘映像。
 2. 从“应用程序”打开它。若 macOS 阻止首次打开，进入 **系统设置 → 隐私与安全性 → 仍要打开**，按系统提示确认。

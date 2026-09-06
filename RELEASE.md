@@ -1,50 +1,49 @@
-# 对话荧光笔 v0.4.4 · Safari 公式结构修复 · 免费 DMG 测试版
+# 对话荧光笔 / ChatGPT Marker v0.5.0 · 中文 / English
+
+[中文说明](#中文) · [English](#english)
+
+## 中文
 
 **回答太长，先划重点；有疑问或不同想法，就地批注；多处看不懂，勾选后一起追问。**
 
-[下载网站与功能示例](https://chatgpt-marker.chaohui-97.chatgpt.site) · [完整介绍](https://github.com/ChaohuiGuoCN/chatgpt-marker#readme)
+本版为网站、工具和安装说明加入中英文切换：
 
-## 三个问题，三个办法
+- 网站顶部“中文 / English”，包含三个痛点、虚构示例、PDF 展示和安装说明。
+- 荧光笔列表 → 设置 → 界面语言，Safari 插件弹窗也可切换。插件标签页同步语言并记住选择。
+- PDF 预览可切换生成的标题与说明；复制格式中的“原文 / 批注”也会使用选择的语言。
+- Mac 安装应用和安装说明顶部提供语言切换；GitHub 每份文档顶部提供对应语言链接。
+- 切换保留条目勾选、批注草稿与激光笔状态。对话原文、你的批注和公式不会被自动翻译。
+- 继续支持整段对话与单条回复 PDF 导出，保留 v0.4.4 的 Safari 公式修复。
 
-以下是围绕“自学 Python，做一个记账工具”编写的虚构示例。
+**虚构示例：**长回答里高亮“先保存一条收支记录”；在“三小时学习计划”旁批注“我只有 30 分钟”；勾选“边界条件”“单元测试”等词和自己的问题，一次整理到草稿。
 
-1. **回答太长，找不到重点 → 高亮重点。** 回答写了好几屏，你只想记住“先把一条收支记录存起来，再练习统计总额”。选中这句话高亮，下次回看更容易找到。
-2. **不符合自己的情况，或者没看懂 → 原文批注。** 看到“建议每天连续学习三小时”，在旁边记下“我每天只有 30 分钟，能按这个时间重排吗？”；看到“边界条件”，记下“余额为 0 算吗？”。把不同看法和疑问留在对应原文旁。
-3. **多个词不懂，逐个复制太麻烦 → 勾选后批量整理。** 把“最小可运行示例”“边界条件”“单元测试”及自己的问题勾选起来，一次复制，或点击“发送到对话框”，把原文和批注一起追加到草稿。检查后由你手动发送。
+下载附件 **ChatGPT-Marker-Safari-v0.5.0-unsigned.dmg**，拖入“应用程序”后启用 Safari 扩展。旧版更新前先导出 JSON 备份。ZIP 作为临时加载备用包；不要下载 GitHub 自动生成的 Source code 文件。
 
-## 下载与安装
+这是未使用 Apple 开发者证书签名、未公证的测试版。macOS 可记住“仍要打开”的应用例外；Safari 每次完全退出后仍需重新允许未签名扩展，不能永久信任。应用可以保留，不必每 24 小时重新下载。
 
-下载 Assets 中的 **ChatGPT-Marker-Safari-v0.4.4-unsigned.dmg**，打开后把 **ChatGPT Marker.app** 拖进“应用程序”。首次被拦截时，可使用系统设置 → 隐私与安全性 → 仍要打开。随后在 Safari 设置中允许未签名扩展，启用对话荧光笔并授权访问 chatgpt.com。
+目标 macOS 14.2+ / Safari 17.2+，包含 Apple 芯片和 Intel；旧系统与 Intel 尚未实机验证。整段 PDF 只包含已加载内容，无法识别的公式会保留可读取的内容并提示。
 
-[完整安装与旧版迁移指南](https://github.com/ChaohuiGuoCN/chatgpt-marker/blob/main/INSTALL.md)
+[网站与示例](https://chatgpt-marker.chaohui-97.chatgpt.site/?lang=zh) · [安装说明](https://github.com/ChaohuiGuoCN/chatgpt-marker/blob/main/INSTALL.md) · [隐私说明](https://github.com/ChaohuiGuoCN/chatgpt-marker/blob/main/PRIVACY.md)
 
-**关于永久信任：** macOS 会记住对这个应用的打开例外；Safari 每次完全退出后，仍需重新允许未签名扩展。DMG 不能取消这个限制，但应用可以保留，不用每 24 小时重新下载安装。
+## English
 
-没有 Apple 开发者证书签名、未公证；本地临时签名仅用于运行。包含 Apple 芯片与 Intel 通用程序；安装目标 macOS 14.2+ / Safari 17.2+，旧系统与 Intel 尚未实机验证。仅限 Mac，不支持 iPhone / iPad。
+**Long answers? Highlight the point. Questions or disagreement? Add a note. Several things unclear? Collect them into one draft.**
 
-旧版 ZIP 用户请先导出 JSON 备份，停用旧临时扩展，再在 DMG 版中恢复。笔记不会自动转移。
+This release adds Chinese/English switching across the website, tools and installation guide:
 
-**其他附件：** ZIP 备用临时扩展（退出或 24 小时后会移除）、安装指南、隐私说明、SHA-256 校验值。不要下载 GitHub 自动生成的 “Source code” 文件。
+- Website header: 中文 / English, covering all three problems, fictional examples, PDF features and installation instructions.
+- Highlights → Settings → Interface language, also available in the Safari popup. The extension remembers the choice and shares it across tabs.
+- PDF preview: switch generated headings and instructions. Copy-format headings also follow your selected language.
+- Mac app and installation guide: language controls at the top. GitHub documents have links to their other language.
+- Switching preserves item selection, note drafts and laser-pointer state. Conversation text, your notes and formulas are never translated automatically.
+- Conversation and single-reply PDF export retain the Safari formula fixes from v0.4.4.
 
-## 本次修复：带中文说明的公式不再变成一行文字
+**Fictional example:** highlight “Save a single transaction” in a long answer; annotate a three-hour study plan with “I only have 30 minutes”; select “edge cases”, “unit tests” and your questions, then collect them into one draft.
 
-ChatGPT 在 Safari 中会把部分公式的源码放在外层节点。v0.4.3 漏读了这一结构，导致帽子符号、上下标、括号和中文说明变成普通文字。本版补上这类公式的提取，整段对话和单条回复都适用。
+Download **ChatGPT-Marker-Safari-v0.5.0-unsigned.dmg** from the assets, move the app to Applications and enable the Safari extension. Export a JSON backup before updating. The ZIP is an alternative temporary-loading package; do not download GitHub’s generated Source code files.
 
-- **整段对话**：荧光笔列表 → 设置 → 导出本段对话 PDF。
-- **单条回复**：回复下方“分享” → 导出该回复 PDF。
+This preview has no Apple developer signature or notarization. macOS can remember the app’s Open Anyway exception; Safari still requires unsigned-extension permission after every full quit. Permanent trust is not available. The app stays installed without a new download every 24 hours.
 
-两种方式都保留所属高亮与完整批注。在 Safari 打印窗口选择“PDF → 存储为 PDF”。
+Targets macOS 14.2+ / Safari 17.2+, with Apple silicon and Intel builds. Older systems and Intel Macs have not been tested on hardware. Conversation PDFs include loaded content; unrecognized formulas keep readable content and show a notice.
 
-[整段对话 PDF 示例](https://chatgpt-marker.chaohui-97.chatgpt.site/samples/conversation.pdf) · [单条回复 PDF 示例](https://chatgpt-marker.chaohui-97.chatgpt.site/samples/reply.pdf) · [网站功能演示](https://chatgpt-marker.chaohui-97.chatgpt.site/#pdf)
-
-示例为虚构内容，通过本机 Safari 实际导出，不包含真实用户对话。
-
-## 验证与限制
-
-64 项自动化测试通过，覆盖 Safari 的外层公式源码、中文下括号说明、上下标、公式去重、高亮与批注、单条回复范围和安全处理。旧系统与 Intel 尚未实机验证。
-
-已安装本版 DMG，并从真实 ChatGPT 回复导出 PDF，逐页检查了带中文下括号说明的状态预测公式、高亮及批注。测试使用的真实对话文件仅留在本机，不包含在公开下载中。
-
-整段 PDF 只包括页面已加载的对话；无法识别的公式保留可读取的内容并提示，图片需要原图可访问。
-
-[版本记录](https://github.com/ChaohuiGuoCN/chatgpt-marker/blob/main/CHANGELOG.md) · [隐私说明](https://github.com/ChaohuiGuoCN/chatgpt-marker/blob/main/PRIVACY.md)
+[Website and examples](https://chatgpt-marker.chaohui-97.chatgpt.site/?lang=en) · [Installation](https://github.com/ChaohuiGuoCN/chatgpt-marker/blob/main/INSTALL.en.md) · [Privacy](https://github.com/ChaohuiGuoCN/chatgpt-marker/blob/main/PRIVACY.en.md)

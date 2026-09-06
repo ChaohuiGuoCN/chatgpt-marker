@@ -1,8 +1,10 @@
-# 安装与使用 · v0.4.4
+**中文** | [English](INSTALL.en.md)
+
+# 安装与使用 · v0.5.0
 
 ## DMG 测试安装包
 
-下载 **ChatGPT-Marker-Safari-v0.4.4-unsigned.dmg**。这是免费测试包，没有 Apple 开发者证书签名和公证；仅使用本地临时签名（ad-hoc），让 Apple 芯片能够运行程序。
+下载 **ChatGPT-Marker-Safari-v0.5.0-unsigned.dmg**。这是免费测试包，没有 Apple 开发者证书签名和公证；仅使用本地临时签名（ad-hoc），让 Apple 芯片能够运行程序。
 
 安装目标：macOS 14.2+、Safari 17.2+。包含 Apple 芯片与 Intel 两种架构。旧系统与 Intel 尚未实机验证；不支持 iPhone / iPad。
 
@@ -12,6 +14,10 @@
 4. 设置 → 开发者，勾选 **允许未签名的扩展**（Allow unsigned extensions）。如需身份验证，请自行输入密码或使用 Touch ID。
 5. 点击应用中的 **打开 Safari 扩展设置**，或手动进入 Safari → 设置 → 扩展，启用对话荧光笔，并允许访问 `chatgpt.com`。
 6. 刷新一段已保存的 ChatGPT 对话。页面边缘出现两支笔后，选中文字，再选择颜色或批注图标。
+
+## 切换语言
+
+安装应用与安装说明顶部可选择“中文 / English”。插件中打开“荧光笔列表 → 设置 → 界面语言”，或在 Safari 工具栏的插件弹窗中切换。插件会记住选择并在标签页之间同步；网站和 Mac 应用分别保存自己的选择。PDF 预览也可切换语言。对话原文和你的批注不会被自动翻译。
 
 ## “永久信任”与以后使用
 
@@ -52,7 +58,7 @@
 
 ## ZIP 备用安装方式
 
-**ChatGPT-Marker-Safari-v0.4.4.zip** 仍可用作临时扩展测试：解压后，在 Safari 设置 → 开发者 → 添加临时扩展中选择直接包含 `manifest.json` 的 ChatGPT-Marker 文件夹。这种安装方式在退出 Safari 或 24 小时后会被移除。日常测试优先使用上面的 DMG。
+**ChatGPT-Marker-Safari-v0.5.0.zip** 仍可用作临时扩展测试：解压后，在 Safari 设置 → 开发者 → 添加临时扩展中选择直接包含 `manifest.json` 的 ChatGPT-Marker 文件夹。这种安装方式在退出 Safari 或 24 小时后会被移除。日常测试优先使用上面的 DMG。
 
 ## 官方说明
 
