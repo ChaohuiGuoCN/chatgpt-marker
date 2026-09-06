@@ -4,9 +4,9 @@
 
 对话荧光笔是给 Mac Safari 使用的 ChatGPT 扩展，让你在原文上标记重点、留下自己的问题，再把选中的原文和批注一次复制或整理到对话框。
 
-[下载与功能示例](https://chatgpt-marker.chaohui-97.chatgpt.site) · [下载 Safari 预览版](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.4.1/ChatGPT-Marker-Safari-v0.4.1.zip) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
+[下载与功能示例](https://chatgpt-marker.chaohui-97.chatgpt.site) · [下载 DMG 测试安装包](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.4.2/ChatGPT-Marker-Safari-v0.4.2-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
 
-当前版本：**v0.4.1 · 开发预览版**，需要手动加载临时扩展。安装方式和限制见下文。
+当前版本：**v0.4.2 · 免费 DMG 测试版**，将应用拖入“应用程序”后启用 Safari 扩展。未使用 Apple 开发者证书签名、未公证；Safari 每次退出后仍需重新允许未签名扩展。
 
 ## 三个常见问题，三个对应的办法
 
@@ -96,15 +96,19 @@ ChatGPT 从基础语法、开发工具，一直讲到学习安排和测试方法
 
 ## 下载安装
 
-> 这是需要手动加载的临时扩展，尚未签名或公证，不是双击安装的 macOS 应用。Safari 在退出或 24 小时后会移除临时扩展，使用期间请定期导出 JSON 备份。
+下载 **ChatGPT-Marker-Safari-v0.4.2-unsigned.dmg**。不要下载 GitHub 自动生成的 “Source code” 文件。
 
-1. 下载上面的 **ChatGPT-Marker-Safari-v0.4.1.zip** 并解压。不要下载 GitHub 自动生成的 “Source code” 文件。
-2. 在 Safari → 设置 → 高级中打开“显示网页开发者功能”。
-3. 打开设置 → 开发者 → 添加临时扩展，按系统提示允许未签名扩展。
-4. 选择解压后的 **ChatGPT-Marker** 文件夹，其中应直接包含 `manifest.json`。
-5. 在设置 → 扩展中启用“对话荧光笔”，允许访问 `chatgpt.com`，然后刷新一段已保存的对话。
+1. 打开 DMG，把 **ChatGPT Marker.app** 拖入 **Applications（应用程序）**，然后弹出磁盘映像。
+2. 从“应用程序”打开它。若 macOS 阻止首次打开，进入 **系统设置 → 隐私与安全性 → 仍要打开**，按系统提示确认。
+3. Safari → 设置 → 高级，打开“显示网页开发者功能”；再到 **开发者 → 允许未签名的扩展**。
+4. 点击应用里的“打开 Safari 扩展设置”，启用对话荧光笔，允许访问 `chatgpt.com`。
+5. 刷新已保存的 ChatGPT 对话，开始标记。
 
-本机实测 Safari **26.5.2**。需要有“添加临时扩展”入口的 Mac Safari；没有此入口的版本不能用此 ZIP 直接安装。iPhone / iPad 暂未支持。
+**能否永久信任？** macOS 会记住对这个应用的“仍要打开”例外，但这不等于 Safari 的扩展许可。Safari 每次完全退出后，仍需重新允许未签名扩展，无法设置为永久信任。应用可以一直保留；DMG 安装不需要每 24 小时重新下载或添加临时文件夹。
+
+从旧 ZIP 迁移前，先导出 JSON 备份，启用 DMG 版后恢复；旧笔记不会自动转移。不要同时启用新旧两份扩展。
+
+安装目标为 macOS 14.2+ / Safari 17.2+，提供 Apple 芯片和 Intel 通用程序；旧系统与 Intel 尚未实机验证。iPhone / iPad 暂不支持。测试包只有本地临时签名（ad-hoc，用于让 Apple 芯片运行），没有 Apple 开发者身份签名和公证。
 
 [详细安装、更新和卸载步骤](INSTALL.md) · [隐私说明](PRIVACY.md) · [版本说明](CHANGELOG.md)
 

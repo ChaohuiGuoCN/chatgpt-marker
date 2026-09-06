@@ -1,4 +1,4 @@
-# 对话荧光笔 v0.4.1 · Safari 开发预览版
+# 对话荧光笔 v0.4.2 · 免费 DMG 测试安装包
 
 **回答太长，先划重点；有疑问或不同想法，就地批注；多处看不懂，勾选后一起追问。**
 
@@ -12,16 +12,22 @@
 2. **不符合自己的情况，或者没看懂 → 原文批注。** 看到“建议每天连续学习三小时”，在旁边记下“我每天只有 30 分钟，能按这个时间重排吗？”；看到“边界条件”，记下“余额为 0 算吗？”。把不同看法和疑问留在对应原文旁。
 3. **多个词不懂，逐个复制太麻烦 → 勾选后批量整理。** 把“最小可运行示例”“边界条件”“单元测试”及自己的问题勾选起来，一次复制，或点击“发送到对话框”，把原文和批注一起追加到草稿。检查后由你手动发送。
 
-## 下载前请看
+## 下载与安装
 
-下载 Assets 中的 **ChatGPT-Marker-Safari-v0.4.1.zip** 并解压，按 [安装指南](https://github.com/ChaohuiGuoCN/chatgpt-marker/blob/main/INSTALL.md) 在 Safari 中添加临时扩展。不要下载 GitHub 自动生成的 “Source code” 文件。
+下载 Assets 中的 **ChatGPT-Marker-Safari-v0.4.2-unsigned.dmg**，打开后把 **ChatGPT Marker.app** 拖进“应用程序”。首次被拦截时，可使用系统设置 → 隐私与安全性 → 仍要打开。随后在 Safari 设置中允许未签名扩展，启用对话荧光笔并授权访问 chatgpt.com。
 
-当前未签名或公证，需要手动加载。Safari 退出或 24 小时后会移除临时扩展，请定期导出 JSON 备份。本机实测 Safari 26.5.2；没有“添加临时扩展”入口的版本无法用此 ZIP 直接安装。暂不支持 iPhone / iPad。
+[完整安装与旧版迁移指南](https://github.com/ChaohuiGuoCN/chatgpt-marker/blob/main/INSTALL.md)
 
-## 其他功能与验证
+**关于永久信任：** macOS 会记住对这个应用的打开例外；Safari 每次完全退出后，仍需重新允许未签名扩展。DMG 不能取消这个限制，但应用可以保留，不用每 24 小时重新下载安装。
 
-支持带高亮和完整批注的 PDF 导出、单条回复 PDF、激光笔和 JSON 备份。v0.4.1 已修复引用来源图标在 PDF 中过大的问题。
+没有 Apple 开发者证书签名、未公证；本地临时签名仅用于运行。包含 Apple 芯片与 Intel 通用程序；安装目标 macOS 14.2+ / Safari 17.2+，旧系统与 Intel 尚未实机验证。仅限 Mac，不支持 iPhone / iPad。
 
-插件已通过 56 项自动化测试、类型检查与构建，并在本机 Safari 和真实 ChatGPT 页面验证。这次更新的是网站和项目介绍，下载包仍为原来的 v0.4.1。
+旧版 ZIP 用户请先导出 JSON 备份，停用旧临时扩展，再在 DMG 版中恢复。笔记不会自动转移。
+
+**其他附件：** ZIP 备用临时扩展（退出或 24 小时后会移除）、安装指南、隐私说明、SHA-256 校验值。不要下载 GitHub 自动生成的 “Source code” 文件。
+
+## 功能
+
+保留四色高亮、侧边批注、批量复制与追加草稿、PDF 导出、激光笔、JSON 备份。PDF 保留标记、完整批注和来源链接。
 
 [版本记录](https://github.com/ChaohuiGuoCN/chatgpt-marker/blob/main/CHANGELOG.md) · [隐私说明](https://github.com/ChaohuiGuoCN/chatgpt-marker/blob/main/PRIVACY.md)
