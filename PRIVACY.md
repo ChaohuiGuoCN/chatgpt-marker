@@ -1,17 +1,17 @@
-**中文** | [English](PRIVACY.en.md)
+**English** | [中文](PRIVACY.zh-CN.md)
 
-# 隐私说明
+# Privacy notice
 
-适用于对话荧光笔 v0.5.0，更新日期：2026-09-06。
+Applies to ChatGPT Marker v0.5.1. Updated September 6, 2026.
 
-- 扩展在你授权的 ChatGPT 页面读取对话文字、选区和页面结构，以显示高亮、定位批注及整理 PDF。
-- 保存的数据包括选中的原文、上下文、批注、颜色、对话地址、定位信息、工具位置和界面语言。这些数据保存在本机的扩展存储中，不提供云同步。
-- 扩展没有自己的服务器、统计代码或遥测，不把对话和批注上传到开发者。ChatGPT 自身的联网与数据处理不由此扩展控制。
-- 点击“复制”时，选中的原文和批注会进入系统剪贴板；点击“发送到对话框”时，内容会追加到 ChatGPT 草稿。扩展不会自动提交消息。
-- PDF 在本机的新标签页中整理，随后调用浏览器打印。预览可能向原始地址请求对话中的图片。扩展不创建公开分享链接。公式在本机排版，所用 KaTeX 代码与字体随扩展打包，不向外部公式服务发送正文或公式。
-- PDF 临时副本在预览读取后删除；未读取的副本会在之后导出时清理（超过一小时）。
-- JSON 备份和 PDF 中可能包含私人信息，由你自行决定保存位置及分享对象。
-- 所需权限为本地存储，以及 `https://chatgpt.com/*` 和 `https://chat.openai.com/*` 的页面访问。
-- 下载网站不设置分析或广告追踪，也没有注册表单。网站只在浏览器本地保存语言选择，Mac 应用和安装说明也在本机保存语言选择。网站与下载服务提供商（Sites、GitHub）可能按其服务规则处理网络访问日志。
+- On ChatGPT pages you authorize, the extension reads conversation text, your selection and page structure to display highlights, locate notes and prepare PDFs.
+- Saved data includes selected text, surrounding context, notes, colors, conversation URLs, location information, tool position and interface language. This stays in local extension storage; there is no cloud sync.
+- The extension has no developer-operated server, analytics or telemetry. It does not upload conversations or notes to the developer. ChatGPT’s own networking and data handling are outside this extension’s control.
+- Copy sends selected quotes and notes to the system clipboard. Add to draft appends them to the ChatGPT composer. The extension does not submit messages automatically.
+- PDFs are prepared locally in a new tab, then printed using the browser. The preview may request images from their original URLs. It does not create a public share link. Formulas are rendered locally with bundled KaTeX code and fonts, without sending text or formulas to an external rendering service.
+- Temporary PDF payloads are deleted after the preview reads them. Unread payloads older than one hour are cleaned up during later exports.
+- JSON backups and PDFs may contain private information. You choose where to save them and whom to share them with.
+- Permissions are local storage and page access to `https://chatgpt.com/*` and `https://chat.openai.com/*`.
+- The website has no analytics, advertising trackers or registration form. It stores only your language preference in the browser. The Mac app and installation guide also save their language preferences locally. Website and download providers (Sites and GitHub) may process access logs under their own policies.
 
-可在扩展列表中删除单条标记，或先备份后卸载扩展。临时扩展到期、被移除或重新安装时，存储可能丢失，请定期备份。
+Delete individual marks in the extension’s list, or back up before uninstalling. Data may be lost when a temporary extension expires, is removed or is reinstalled. Back up regularly.

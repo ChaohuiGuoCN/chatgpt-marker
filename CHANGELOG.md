@@ -1,51 +1,55 @@
-**中文** | [English](CHANGELOG.en.md)
+**English** | [中文](CHANGELOG.zh-CN.md)
 
-# 版本说明
+# Changelog
 
-## v0.5.0 · 2026-09-06 · 中英文切换
+## v0.5.1 · September 6, 2026 · English by default
 
-- 下载网站、插件设置、Safari 弹窗、PDF 预览、Mac 安装应用与安装说明均可切换中英文并记住选择。
-- 功能示例、操作提示、复制格式标题和 PDF 标签提供英文；对话原文、批注与公式保持原样。
-- GitHub 新增英文介绍、安装、隐私与版本说明，文档顶部可切换语言。
-- 切换时保留条目勾选、批注草稿与激光笔状态；插件标签页同步语言，网站和安装应用分别保存选择。
-- 保留 v0.4.4 的 Safari 公式修复。
+- English is now the initial language for the website, extension, Safari popup, PDF preview, Mac app and installation guide.
+- The GitHub README, installation, privacy and changelog pages open in English, with links to the Chinese editions. Existing English links remain available.
+- Chinese switching and saved language choices remain supported. Conversation text, notes and formulas are unchanged.
 
-## v0.4.4 · 2026-09-06 · Safari 公式结构适配
+## v0.5.0 · September 6, 2026 · Chinese and English
 
-- 修复 ChatGPT 在 Safari 中将公式源码放在外层节点时，导出结果变成一行普通文字的问题。
-- 支持读取 `data-math-source` 和公式的 `aria-label`；保留中文下括号说明、帽子符号、上下标和大圆括号。
-- 同时覆盖整段对话与单条回复导出，不重复插入公式，继续保留高亮和批注。
-- 公式源码缺失时也会在预览中提示，避免把替代文字当成正常排版结果。
-- 64 项自动化测试通过，并使用真实问题页面检查公式提取与排版。
+- Added persistent Chinese/English switching to the website, extension settings, Safari popup, PDF preview, Mac app and installation guide.
+- Translated feature examples, messages, copy-format headings, PDF labels and installation guidance. Conversation text, notes and formulas are preserved exactly.
+- Added English GitHub documentation with language links, including installation, privacy and release notes.
+- Switching languages preserves selected items, note drafts and the laser pointer state. Extension tabs share the language preference; the website and Mac app store their own preference.
+- Retained the Safari formula fixes from v0.4.4.
 
-## v0.4.3 · 2026-09-06 · PDF 公式与功能展示
+## v0.4.4 · September 6, 2026 · Safari formula compatibility
 
-- 修复 PDF 中公式缺失或只显示源码的问题：常见公式重新排版，所需字体随扩展打包。
-- 支持行内、独立公式、分数、根号、积分、矩阵、分段式与多行公式。无 TeX 源码时保留安全的 MathML，无法解析时保留源码并提示。
-- 长公式适应打印宽度，保留跨公式的高亮。
-- 网站和 GitHub 新增整段对话 / 单条回复 PDF 的独立展示、操作说明与真实导出的虚构示例。
-- 62 项自动化测试通过；在本机 Safari 打印流程中验证公式、高亮和批注的 PDF 排版。
+- Fixed formulas becoming plain text when ChatGPT stores TeX on an outer Safari DOM wrapper.
+- Reads `data-math-source` and formula `aria-label`, preserving Chinese underbrace labels, accents, subscripts, superscripts and large parentheses.
+- Applies to conversation and single-reply export without duplicating formulas; preserves highlights and notes.
+- Warns when formula source is missing instead of presenting fallback text as a properly typeset result.
+- Passed 64 automated tests and checked formula extraction and rendering on the reported real page.
 
+## v0.4.3 · September 6, 2026 · PDF formulas and examples
 
-## v0.4.2 · 2026-09-06 · DMG 测试安装包
+- Fixed missing formulas and raw TeX in PDFs by typesetting common formulas with bundled fonts.
+- Added inline and display math, fractions, roots, integrals, matrices, piecewise and multiline formulas. Preserves safe MathML without TeX; keeps readable fallback content and warns on failure.
+- Fits long formulas to print width and preserves highlights spanning formulas.
+- Added conversation and single-reply PDF sections, instructions and exported fictional samples to the website and GitHub.
+- Passed 62 automated tests and verified formula, highlight and note layout through Safari printing.
 
-- 新增免费 DMG，内含 Mac 应用与 Safari 扩展，拖入“应用程序”后启用。
-- 提供 Apple 芯片和 Intel 通用程序；安装目标 macOS 14.2+ / Safari 17.2+。旧系统与 Intel 尚未实机验证。
-- 应用提供 Safari 设置入口和本地安装指南，明确说明 macOS 的应用许可与 Safari 的扩展许可。
-- 应用可保留；Safari 退出后仍需重新允许未签名扩展，不能永久信任。
-- 提供 ZIP 备用包、JSON 迁移说明和 SHA-256 校验值。
-- 高亮、批注、批量整理与 PDF 的功能代码沿用 v0.4.1。
+## v0.4.2 · September 6, 2026 · DMG preview
 
+- Added a free DMG containing the Mac app and Safari extension.
+- Universal Apple silicon and Intel app targeting macOS 14.2+ / Safari 17.2+. Older systems and Intel were not tested on hardware.
+- Added a Safari settings shortcut and local guide explaining macOS app permission and Safari extension permission separately.
+- The app stays installed, but unsigned-extension permission must be renewed after quitting Safari; no permanent trust.
+- Included an alternative ZIP, JSON migration instructions and SHA-256 checksums.
+- Retained highlighting, notes, batch collection and PDF functionality from v0.4.1.
 
-## v0.4.1 · 2026-09-06 · 首次公开预览
+## v0.4.1 · September 6, 2026 · First public preview
 
-- 提供 Mac Safari 临时扩展 ZIP、安装指南与隐私说明。
-- 四色高亮、快速双击高亮、三击批注、侧边批注与编号跳转。
-- 笔记选择、按颜色选择、单条复制和追加到 ChatGPT 草稿。
-- 可拖动并自动靠边的工具，以及激光笔。
-- 整段已加载对话和单条回复 PDF 导出，保留高亮与完整批注。
-- 修复 PDF 中 ChatGPT 引用来源图标过大的问题，保留来源链接。
+- Released the Mac Safari temporary-extension ZIP, installation guide and privacy notice.
+- Four highlight colors, quick double-click highlighting, triple-click notes, margin notes and numbered navigation.
+- Item selection, selection by color, single-item copying and insertion into the ChatGPT draft.
+- Draggable tools that snap to the edge, plus a laser pointer.
+- PDF export for loaded conversations and individual replies with highlights and complete notes.
+- Fixed oversized ChatGPT citation icons in PDFs while keeping source links.
 
-验证：56 项自动化测试通过；通过类型检查与构建。已在本机 Safari 26.5.2 和真实 ChatGPT 页面进行高亮、批注、复制及 PDF 导出验证。
+Validation: 56 automated tests, type checking and builds passed. Highlighting, notes, copying and PDF export were checked in local Safari 26.5.2 on real ChatGPT pages.
 
-已知限制：需要手动加载临时扩展，Safari 退出或 24 小时后会移除；无签名或公证。只支持 Mac Safari；不提供 iPhone / iPad 安装包。PDF 只包括页面已加载的对话；公式导出为公式源文本；图片需要原图可访问。
+Limitations of this historical version: temporary extension loading; removal after quitting Safari or 24 hours; no developer signing or notarization; Mac only. PDFs included loaded messages, formulas as source text and images only when the original URLs were accessible.

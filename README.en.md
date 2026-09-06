@@ -1,4 +1,4 @@
-[中文](README.md) | **English**
+**English** | [中文](README.zh-CN.md)
 
 # ChatGPT Marker
 
@@ -6,9 +6,9 @@
 
 ChatGPT Marker is a Safari extension for Mac. Highlight text in ChatGPT, keep your thoughts beside the source, and copy selected quotes and notes together or add them to your draft. You can also **export a conversation or a single reply as a PDF with formulas, highlights and complete notes**.
 
-[Website and examples](https://chatgpt-marker.chaohui-97.chatgpt.site/?lang=en) · [Download DMG preview](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.5.0/ChatGPT-Marker-Safari-v0.5.0-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
+[Website and examples](https://chatgpt-marker.chaohui-97.chatgpt.site/?lang=en) · [Download DMG preview](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.5.1/ChatGPT-Marker-Safari-v0.5.1-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
 
-Current version: **v0.5.0 · Free DMG preview**. Move the app to Applications, then enable the extension in Safari. This preview has no Apple developer signature or notarization. Safari requires unsigned-extension permission again after every full quit.
+Current version: **v0.5.1 · Free DMG preview**. Move the app to Applications, then enable the extension in Safari. This preview has no Apple developer signature or notarization. Safari requires unsigned-extension permission again after every full quit.
 
 ## Three common problems, three practical answers
 
@@ -109,7 +109,9 @@ In Safari’s print dialog, choose **PDF → Save as PDF**. The extension does n
 
 Common formulas are typeset locally with bundled fonts. Unrecognized formulas retain readable content and show a notice. Scroll up to load long conversations before exporting; images must be accessible at their source URLs. JSON backups restore editable notes, while PDFs are for reading, printing and sharing.
 
-## 中文 / English
+## English / 中文
+
+English is the default on first use. A language you choose manually is remembered.
 
 - **Website:** use 中文 / English in the header. The URL can include `?lang=en` or `?lang=zh`.
 - **Extension:** open Highlights → Settings → Interface language, or use the Safari toolbar popup. The preference is saved and shared across extension tabs.
@@ -121,7 +123,7 @@ Language changes affect interface labels and collection-format headings. **Your 
 
 ## Download and install
 
-Download **ChatGPT-Marker-Safari-v0.5.0-unsigned.dmg**, not GitHub’s automatically generated “Source code” files.
+Download **ChatGPT-Marker-Safari-v0.5.1-unsigned.dmg**, not GitHub’s automatically generated “Source code” files.
 
 1. Open the DMG, drag **ChatGPT Marker.app** to **Applications**, then eject the disk image.
 2. Open the app from Applications. If macOS blocks it, go to **System Settings → Privacy & Security → Open Anyway** and follow the system prompts.
@@ -135,7 +137,7 @@ Before switching from the old ZIP, export a JSON backup and restore it after ena
 
 Targets macOS 14.2+ / Safari 17.2+. Includes Apple silicon and Intel builds; older systems and Intel Macs have not been tested on hardware. iPhone and iPad are not supported. Local ad-hoc signing allows Apple silicon to run the app; this is not Apple developer signing or notarization.
 
-[Install, update and uninstall](INSTALL.en.md) · [Privacy](PRIVACY.en.md) · [Changelog](CHANGELOG.en.md)
+[Install, update and uninstall](INSTALL.md) · [Privacy](PRIVACY.md) · [Changelog](CHANGELOG.md)
 
 ## Project and licensing
 

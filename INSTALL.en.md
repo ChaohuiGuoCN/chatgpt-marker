@@ -1,8 +1,8 @@
-[中文](INSTALL.md) | **English**
+**English** | [中文](INSTALL.zh-CN.md)
 
-# Installation and use · v0.5.0
+# Installation and use · v0.5.1
 
-Download **ChatGPT-Marker-Safari-v0.5.0-unsigned.dmg**. This free preview has no Apple developer signature or notarization. Local ad-hoc signing allows it to run on Apple silicon.
+Download **ChatGPT-Marker-Safari-v0.5.1-unsigned.dmg**. This free preview has no Apple developer signature or notarization. Local ad-hoc signing allows it to run on Apple silicon.
 
 Targets macOS 14.2+ and Safari 17.2+. Includes Apple silicon and Intel builds. Older systems and Intel Macs have not been tested on hardware. iPhone and iPad are not supported.
 
@@ -16,6 +16,8 @@ Targets macOS 14.2+ and Safari 17.2+. Includes Apple silicon and Intel builds. O
 6. Refresh a saved ChatGPT conversation. When the pen tools appear at the edge, select text and choose a color or the note icon.
 
 ## Language
+
+English is the default on first use. A saved Chinese preference is respected.
 
 Use **中文 / English** at the top of the Mac app or installation guide. In ChatGPT, open **Highlights → Settings → Interface language**, or change it in the Safari toolbar popup. The extension remembers its language across tabs. The website and Mac app remember their own preferences. PDF previews also have a language selector. Your source text and notes are never translated automatically.
 
@@ -58,7 +60,7 @@ Before uninstalling, back up, disable the extension in Safari, remove the app an
 
 ## Alternative ZIP installation
 
-**ChatGPT-Marker-Safari-v0.5.0.zip** can be loaded temporarily. Extract it, then use Safari Settings → Developer → Add Temporary Extension and select the ChatGPT-Marker folder containing `manifest.json`. Safari removes this temporary installation after quitting or 24 hours. Prefer the DMG for everyday testing.
+**ChatGPT-Marker-Safari-v0.5.1.zip** can be loaded temporarily. Extract it, then use Safari Settings → Developer → Add Temporary Extension and select the ChatGPT-Marker folder containing `manifest.json`. Safari removes this temporary installation after quitting or 24 hours. Prefer the DMG for everyday testing.
 
 ## Official documentation
 

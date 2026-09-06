@@ -1,6 +1,12 @@
-[中文](CHANGELOG.md) | **English**
+**English** | [中文](CHANGELOG.zh-CN.md)
 
 # Changelog
+
+## v0.5.1 · September 6, 2026 · English by default
+
+- English is now the initial language for the website, extension, Safari popup, PDF preview, Mac app and installation guide.
+- The GitHub README, installation, privacy and changelog pages open in English, with links to the Chinese editions. Existing English links remain available.
+- Chinese switching and saved language choices remain supported. Conversation text, notes and formulas are unchanged.
 
 ## v0.5.0 · September 6, 2026 · Chinese and English
 

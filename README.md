@@ -1,150 +1,146 @@
-**中文** | [English](README.en.md)
+**English** | [中文](README.zh-CN.md)
 
-# 对话荧光笔 · ChatGPT Marker
+# ChatGPT Marker
 
-**回答太长，先划重点；有疑问或不同想法，就地批注；多处看不懂，勾选后一起追问。**
+**Long answers? Highlight the point. Questions or disagreement? Add a note. Several things unclear? Collect them into one follow-up.**
 
-对话荧光笔是给 Mac Safari 使用的 ChatGPT 扩展，让你在原文上标记重点、留下自己的问题，再把选中的原文和批注一次复制或整理到对话框。也可以把**整段对话或单条回复导出为 PDF，保留公式、高亮和完整批注**。
+ChatGPT Marker is a Safari extension for Mac. Highlight text in ChatGPT, keep your thoughts beside the source, and copy selected quotes and notes together or add them to your draft. You can also **export a conversation or a single reply as a PDF with formulas, highlights and complete notes**.
 
-[下载与功能示例](https://chatgpt-marker.chaohui-97.chatgpt.site) · [下载 DMG 测试安装包](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.5.0/ChatGPT-Marker-Safari-v0.5.0-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
+[Website and examples](https://chatgpt-marker.chaohui-97.chatgpt.site/?lang=en) · [Download DMG preview](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.5.1/ChatGPT-Marker-Safari-v0.5.1-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
 
-当前版本：**v0.5.0 · 免费 DMG 测试版**，将应用拖入“应用程序”后启用 Safari 扩展。未使用 Apple 开发者证书签名、未公证；Safari 每次退出后仍需重新允许未签名扩展。
+Current version: **v0.5.1 · Free DMG preview**. Move the app to Applications, then enable the extension in Safari. This preview has no Apple developer signature or notarization. Safari requires unsigned-extension permission again after every full quit.
 
-## 三个常见问题，三个对应的办法
+## Three common problems, three practical answers
 
-| 使用 ChatGPT 时的麻烦                        | 对话荧光笔的办法                                       | 用完之后                               |
-| -------------------------------------------- | ------------------------------------------------------ | -------------------------------------- |
-| 回答一长串，重点淹没在段落里，回头又要从头找 | **高亮重点**：选中文字，用四种颜色标记                 | 重点留在原文里，下次回看更容易找到     |
-| 回答不符合自己的情况，或有一句没看懂         | **原文批注**：在对应文字旁写下不同看法、实际情况和问题 | 不用靠记忆，也能知道当时为什么存疑     |
-| 多个词或表述看不懂，一个个复制、粘贴太麻烦   | **勾选后批量整理**：一次复制，或追加到 ChatGPT 草稿    | 原文和自己的问题一起带过去，再统一追问 |
+| The problem | What Marker does | What you gain |
+| --- | --- | --- |
+| Long replies bury the key point. You have to find it again later. | **Highlight text** in four colors. | The important part stays visible in its original context. |
+| Advice does not fit your situation, or a phrase is unclear. | **Add a note beside the source** with your perspective or question. | Remember why you disagreed or what you did not understand. |
+| Copying unfamiliar terms one by one is tedious. | **Select and collect items** into one copy or draft insertion. | Bring the source text and your questions together for a follow-up. |
 
-下面的对话是为演示而编写的虚构示例，围绕同一个问题展开：**“我想用 Python 做记账工具，应该怎么学？”**
+The following fictional examples all start with one question: **“How should I learn Python to build an expense tracker?”**
 
-## 1. 回答太长：把真正需要的一句标出来
+## 1. Long answers: highlight the sentence you need
 
-ChatGPT 从基础语法、开发工具，一直讲到学习安排和测试方法。你现在最想记住的，可能只是“今天先做哪一步”。
+ChatGPT covers syntax, tools, study schedules and testing. You may only want to remember what to do today.
 
-**示例回答节选：**
-
-> 学习 Python 可以从变量、列表和函数开始。安装开发工具后，先熟悉如何运行一个文件，再尝试处理输入与输出。学习资料可以结合教程、文档和练习题……
+> Start with variables, lists and functions. Install your tools, learn to run a file, then practice input and output. Combine tutorials, documentation and exercises…
 >
-> 如果你想做记账工具，不必一次实现完整界面。**🟨 先把一条收支记录存起来，再练习统计总额。** 等这一小步跑通后，再考虑按月份查询、导出文件和分类统计。
+> You do not need a complete interface to start an expense tracker. **🟨 Save a single transaction, then practice calculating the total.** Once that works, add monthly searches, file exports and category totals.
 >
-> 后续还可以继续了解数据保存、错误处理和测试方法。每完成一项功能，回顾遇到的问题，再安排下一阶段的学习……
+> Later, explore storage, error handling and testing. After each feature, review what you learned and plan the next step…
 
-**解决办法：**选中加粗的那一句，点击黄色高亮。下一次打开对话，不必重新读完长回答，就能找到自己标出的第一步。
+**The solution:** select the bold sentence and choose yellow. When you return, your first step is easy to find without reading the whole answer again.
 
-支持黄色、绿色、蓝色和粉色。完成选字后 **4 秒内双击鼠标左键**，还可以沿用上次颜色快速标记。
+Choose yellow, green, blue or pink. **Double-click within 4 seconds of selecting text** to reuse the last color.
 
-## 2. 有疑问或不同想法：直接在原文旁写批注
+## 2. Questions or disagreement: keep your thoughts beside the text
 
-只划线，未必能记住当时为什么不认同、哪里没明白。批注可以把自己的想法和原文放在一起。
+A highlight alone may not remind you why you disagreed or what confused you. Notes keep those thoughts with the source.
 
-| 示例原文                   | 我的批注                                         |
-| -------------------------- | ------------------------------------------------ |
-| “建议每天连续学习三小时。” | **[1]** 我每天只有 30 分钟，能按这个时间重排吗？ |
-| “再覆盖各种边界条件。”     | **[2]** 这里的“边界条件”指什么？余额为 0 算吗？  |
+| Example source | My note |
+| --- | --- |
+| “Study for three uninterrupted hours each day.” | **[1]** I only have 30 minutes a day. Can you adapt the plan? |
+| “Then cover the edge cases.” | **[2]** What does “edge cases” mean here? Does a zero balance count? |
 
-第一条记录的是**建议与自身情况不同**；第二条记录的是**还没有理解的表述**。
+The first note explains **why the advice does not fit**; the second records **a phrase that needs clarification**.
 
-**解决办法：**选中对应文字，点击批注图标，把问题记下来。批注显示在原文两侧，可折叠；点击原文后的编号，可以展开并跳到对应批注。完成选字后 **4 秒内三击鼠标左键**，也能直接插入批注。
+**The solution:** select the text and click the note icon. Notes appear in the margins and can be collapsed. Click a numbered reference to open the matching note and scroll to it. You can also **triple-click within 4 seconds of selecting text** to insert a note.
 
-## 3. 多处看不懂：先标记，再一次整理到对话框
+## 3. Several unclear terms: collect them into one draft
 
-“最小可运行示例”“边界条件”“单元测试”散在回答里。想一起问清楚，却要反复选中、复制、切换到输入框，还容易漏掉一个。
+“Minimal working example”, “edge cases” and “unit tests” are scattered through the answer. Repeatedly selecting, copying and switching to the composer makes it easy to miss one.
 
-**先标记这些词，并写下自己想问的问题：**
+Mark the terms and write your questions:
 
-- [x] **最小可运行示例** — 能给一个不超过 10 行的例子吗？
-- [x] **边界条件** — 记账工具要考虑哪些特殊情况？
-- [x] **单元测试** — 能用一条收支记录演示怎么写吗？
+- [x] **Minimal working example** — Can you show an example in 10 lines or fewer?
+- [x] **Edge cases** — Which edge cases should an expense tracker handle?
+- [x] **Unit tests** — Can you demonstrate a test using a single transaction?
 
-**解决办法：**打开荧光笔列表，勾选这三项，点击“复制”，或直接点击“发送到对话框”。也可以用颜色圆点一次选取同色条目。
+**The solution:** open the highlights list, select these items, then choose **Copy** or **Add to draft**. Color buttons can select all items of one color.
 
-整理到草稿里的内容如下，原文和批注会一起保留：
+The English collection format keeps quotes and notes together:
 
 ```text
-【1】
-原文：
-最小可运行示例
+[1]
+Source:
+Minimal working example
 
-批注：
-能给一个不超过 10 行的例子吗？
-
-──────────
-
-【2】
-原文：
-边界条件
-
-批注：
-记账工具要考虑哪些特殊情况？
+Note:
+Can you show an example in 10 lines or fewer?
 
 ──────────
 
-【3】
-原文：
-单元测试
+[2]
+Source:
+Edge cases
 
-批注：
-能用一条收支记录演示怎么写吗？
+Note:
+Which edge cases should an expense tracker handle?
+
+──────────
+
+[3]
+Source:
+Unit tests
+
+Note:
+Can you demonstrate a test using a single transaction?
 ```
 
-“复制”只写入剪贴板；“发送到对话框”只追加到已有草稿，**由你检查后手动发送**。这些问题来自你写下的批注，扩展不会自动生成或发送问题。普通高亮也可以一起整理，没有批注时会显示“（无批注）”。
+**Copy** only writes to the clipboard. **Add to draft** appends to the existing draft, **which you review and send manually**. Questions come from your own notes; the extension does not generate or send them. Plain highlights can also be collected and show “(No note)” when no note was added.
 
-## 想保存为 PDF：整段对话或单条回复，都能带走
+## PDF export: keep a conversation or just one reply
 
-一段解释值得反复看，一份方案需要发给别人，或者一长段讨论需要归档。手动截图容易分散，复制到文档又要重新排版。对话荧光笔提供两种 PDF 导出方式：
+Save an explanation for review, share a plan or archive a discussion without taking screenshots or rebuilding the layout.
 
-| 想保存什么 | 操作 | PDF 里有什么 |
+| What to save | Where to export | What the PDF includes |
 | --- | --- | --- |
-| **整段对话**：保留来回讨论 | 荧光笔列表 → 设置 → 导出本段对话 PDF | 已加载的提问和回答、公式、表格、代码、来源链接、高亮与完整批注 |
-| **单条回复**：只保存一条有用的回答 | 点击这条回复下方的“分享” → 导出该回复 PDF | 仅这条回复的正文、公式、高亮与批注，不带其他回复 |
+| **A conversation** | Highlights → Settings → Export conversation PDF | Loaded questions and answers, formulas, tables, code, source links, highlights and complete notes |
+| **One reply** | Share below that reply → Export this reply as PDF | Only that reply’s content, formulas, highlights and notes |
 
-导出时会打开 Safari 打印窗口，选择 **PDF → 存储为 PDF**。无需创建公开分享链接。
+In Safari’s print dialog, choose **PDF → Save as PDF**. The extension does not create a public share link.
 
-**虚构示例：**“请解释二次方程的求根公式。”把“先计算判别式，再判断实数根的数量”标黄，在旁边批注“先算 Δ，再代入求根公式”。导出的 PDF 会保留排版后的分数、根号、黄色重点和这条批注。
+**Fictional example:** ask for an explanation of the quadratic formula. Highlight “Calculate the discriminant first to find the number of real roots” and add “Find Δ first, then use the quadratic formula.” The PDF keeps the typeset fractions and square roots, yellow highlight and note.
 
-[打开整段对话 PDF 示例](https://chatgpt-marker.chaohui-97.chatgpt.site/samples/conversation.pdf) · [打开单条回复 PDF 示例](https://chatgpt-marker.chaohui-97.chatgpt.site/samples/reply.pdf)
+[Conversation PDF example — Chinese content](https://chatgpt-marker.chaohui-97.chatgpt.site/samples/conversation.pdf) · [Single-reply PDF example — Chinese content](https://chatgpt-marker.chaohui-97.chatgpt.site/samples/reply.pdf)
 
-![实际导出的 PDF：保留公式、高亮与批注，内容为虚构示例](https://chatgpt-marker.chaohui-97.chatgpt.site/samples/pdf-preview.png)
+![Exported PDF with formulas, highlights and notes; fictional example in Chinese](https://chatgpt-marker.chaohui-97.chatgpt.site/samples/pdf-preview.png)
 
-v0.5.0 将常见公式重新排版，字体随扩展提供，不依赖外部公式服务；无法识别的公式保留可读取的内容并提示。长对话请先向上滚动加载正文，图片需要原图可访问。JSON 备份用于恢复可继续编辑的笔记，PDF 用于阅读、打印和分享。
+Common formulas are typeset locally with bundled fonts. Unrecognized formulas retain readable content and show a notice. Scroll up to load long conversations before exporting; images must be accessible at their source URLs. JSON backups restore editable notes, while PDFs are for reading, printing and sharing.
 
-## 中文 / English
+## English / 中文
 
-- 网站：在顶部点击“中文 / English”，也可使用 `?lang=en` 或 `?lang=zh` 链接。
-- 插件：荧光笔列表 → 设置 → 界面语言，或在 Safari 工具栏的插件弹窗中切换。选择会保存并在插件标签页之间同步。
-- PDF 预览：语言选择器可切换生成的标题、说明与打印提示。
-- Mac 安装应用与安装说明：顶部切换语言；应用和网站分别记住各自的选择。
-- GitHub：使用每份文档顶部的语言链接。
+English is the default on first use. A language you choose manually is remembered.
 
-切换只改变界面与整理格式中的标题，**不会翻译对话原文、你写下的批注或公式**。
+- **Website:** use 中文 / English in the header. The URL can include `?lang=en` or `?lang=zh`.
+- **Extension:** open Highlights → Settings → Interface language, or use the Safari toolbar popup. The preference is saved and shared across extension tabs.
+- **PDF preview:** use its language selector to change generated headings and print instructions.
+- **Mac app and installation guide:** use 中文 / English at the top. The app and website keep their own preferences.
+- **GitHub:** use the language links at the top of each document.
 
-## 下载安装
+Language changes affect interface labels and collection-format headings. **Your conversation text, notes and formulas remain unchanged.**
 
-下载 **ChatGPT-Marker-Safari-v0.5.0-unsigned.dmg**。不要下载 GitHub 自动生成的 “Source code” 文件。
+## Download and install
 
-1. 打开 DMG，把 **ChatGPT Marker.app** 拖入 **Applications（应用程序）**，然后弹出磁盘映像。
-2. 从“应用程序”打开它。若 macOS 阻止首次打开，进入 **系统设置 → 隐私与安全性 → 仍要打开**，按系统提示确认。
-3. Safari → 设置 → 高级，打开“显示网页开发者功能”；再到 **开发者 → 允许未签名的扩展**。
-4. 点击应用里的“打开 Safari 扩展设置”，启用对话荧光笔，允许访问 `chatgpt.com`。
-5. 刷新已保存的 ChatGPT 对话，开始标记。
+Download **ChatGPT-Marker-Safari-v0.5.1-unsigned.dmg**, not GitHub’s automatically generated “Source code” files.
 
-**能否永久信任？** macOS 会记住对这个应用的“仍要打开”例外，但这不等于 Safari 的扩展许可。Safari 每次完全退出后，仍需重新允许未签名扩展，无法设置为永久信任。应用可以一直保留；DMG 安装不需要每 24 小时重新下载或添加临时文件夹。
+1. Open the DMG, drag **ChatGPT Marker.app** to **Applications**, then eject the disk image.
+2. Open the app from Applications. If macOS blocks it, go to **System Settings → Privacy & Security → Open Anyway** and follow the system prompts.
+3. Safari → Settings → Advanced → Show features for web developers. Then **Developer → Allow unsigned extensions**.
+4. Click **Open Safari Extension Settings** in the app. Enable ChatGPT Marker and allow access to `chatgpt.com`.
+5. Refresh a saved ChatGPT conversation and start marking.
 
-从旧 ZIP 迁移前，先导出 JSON 备份，启用 DMG 版后恢复；旧笔记不会自动转移。不要同时启用新旧两份扩展。
+**Permanent trust?** macOS remembers the app’s “Open Anyway” exception, but Safari permission is separate. After fully quitting Safari, you must allow unsigned extensions again. The app remains installed; the DMG does not require a download or temporary-folder installation every 24 hours.
 
-安装目标为 macOS 14.2+ / Safari 17.2+，提供 Apple 芯片和 Intel 通用程序；旧系统与 Intel 尚未实机验证。iPhone / iPad 暂不支持。测试包只有本地临时签名（ad-hoc，用于让 Apple 芯片运行），没有 Apple 开发者身份签名和公证。
+Before switching from the old ZIP, export a JSON backup and restore it after enabling the DMG version. Notes do not transfer automatically. Do not enable both copies at once.
 
-[详细安装、更新和卸载步骤](INSTALL.md) · [隐私说明](PRIVACY.md) · [版本说明](CHANGELOG.md)
+Targets macOS 14.2+ / Safari 17.2+. Includes Apple silicon and Intel builds; older systems and Intel Macs have not been tested on hardware. iPhone and iPad are not supported. Local ad-hoc signing allows Apple silicon to run the app; this is not Apple developer signing or notarization.
 
-## 使用提示
+[Install, update and uninstall](INSTALL.md) · [Privacy](PRIVACY.md) · [Changelog](CHANGELOG.md)
 
-PDF：打开荧光笔列表 → 右上角设置 → 导出本段对话 PDF。单条回复：点击回复下方分享 → 导出该回复 PDF。在打印窗口选择 **PDF → 存储为 PDF**，扩展不会创建公开分享链接。
+## Project and licensing
 
-整段 PDF 只包含页面已加载的消息和保存的笔记；较长对话请先向上滚动加载。常见公式会重新排版；无法识别的公式保留可读取的内容并提示。图片需要原图可访问。
+An independent project, not affiliated with OpenAI, ChatGPT or Apple. This repository distributes runtime files and documentation, not development source code, and does not grant an open-source license. Browser extension runtime files contain JavaScript.
 
-这是独立项目，与 OpenAI、ChatGPT 或 Apple 无隶属关系。此仓库用于发布运行文件和说明，不包含开发源码，也未授予开源许可证。浏览器扩展的运行文件包含 JavaScript。
-
-公式排版使用 KaTeX，第三方许可见安装包中的 `katex/LICENSE`（MIT 许可）；这不改变本项目的源码发布范围。
+Formula rendering uses KaTeX. Its MIT license is included in `katex/LICENSE` in the package and does not change this project’s source distribution scope.
