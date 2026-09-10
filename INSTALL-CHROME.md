@@ -2,11 +2,21 @@
 
 # Chrome installation · v0.6.0
 
-Download **ChatGPT-Marker-Chrome-v0.6.0.zip** from [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/tag/v0.6.0) or the [website](https://chatgpt-marker.chaohui-97.chatgpt.site/?lang=en#install). Do not download GitHub's automatic “Source code” archive or the Safari DMG.
+**[Install from the Chrome Web Store](https://chromewebstore.google.com/detail/chatgpt-marker/dbhfheghjjebbkjjpgmdgeagnckljcoa)**. No developer mode or installation folder required.
 
-This is a desktop Chrome extension, installed with developer mode. It has not been published in the Chrome Web Store. The package targets Chrome 105+ on macOS, Windows and Linux; use an up-to-date Chrome. This preview has not yet completed hardware testing. Mobile Chrome is not supported.
+For desktop Chrome on macOS, Windows and Linux. Use an up-to-date version. Mobile Chrome is not supported. Hardware testing is still pending.
 
-## Install
+## Store installation (recommended)
+
+1. Open the store link above and click **Add to Chrome**.
+2. Review the permissions and confirm **Add extension**.
+3. Open or refresh a saved ChatGPT conversation and start marking.
+
+**Switching from a manual installation:** export a JSON backup from the old version, then restore it in the store version. Check your notes before removing the old installation. Do not enable both copies at once.
+
+## Alternative: manual ZIP installation
+
+Download **ChatGPT-Marker-Chrome-v0.6.0.zip** from [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/tag/v0.6.0). Do not download the automatic “Source code” archive or the Safari DMG. The following steps apply only to manual installations.
 
 1. Extract the ZIP. Move **ChatGPT-Marker-Chrome** to a permanent folder. It must directly contain `manifest.json`, `content.js` and `pdf.html`.
 2. Enter `chrome://extensions/` in Chrome's address bar.
@@ -31,15 +41,17 @@ In Safari, open the highlights list and click **Backup**. In Chrome, open the li
 
 ## Update or uninstall
 
-Before updating, export a JSON backup. Extract the new ZIP and replace the contents of the **same installed folder**, preserving its name and location. Click the extension's **Reload** button at `chrome://extensions/`, then refresh ChatGPT. Loading a second folder may create a separate installation with separate notes.
+Chrome updates the store version without downloading or replacing a ZIP.
 
-Before uninstalling, back up your notes. Click **Remove** at `chrome://extensions/`, then delete the folder if no longer needed. Uninstalling may delete the extension's stored data.
+**Manual installations:** before updating, export a JSON backup. Extract the new ZIP and replace the contents of the **same installed folder**, preserving its name and location. Click the extension's **Reload** button at `chrome://extensions/`, then refresh ChatGPT. Loading a second folder may create a separate installation with separate notes.
+
+Before uninstalling, back up your notes. Click **Remove** at `chrome://extensions/`, then delete the folder if this was a manual installation and it is no longer needed. Uninstalling may delete the extension's stored data.
 
 ## Troubleshooting
 
 - **Could not load manifest:** choose the folder directly containing `manifest.json`.
 - **No pen tools:** confirm the extension is enabled and allowed on `chatgpt.com`, then refresh the chat. Empty new chats and temporary chats do not support saved marks.
 - **PDF content missing:** reopen the export from the chat. Scroll up first to load long conversations. Images must be accessible at their original URLs; unsupported formulas retain readable content and show a notice.
-- **After an update:** reload the extension and the ChatGPT page; refreshing only the page does not reload extension files.
+- **After a manual-install update:** reload the extension and the ChatGPT page; refreshing only the page does not reload extension files.
 
 [Google's installation instructions](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked) · [Privacy](PRIVACY.md)

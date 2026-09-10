@@ -6,9 +6,9 @@
 
 ChatGPT Marker is a desktop Chrome extension and a Safari extension for Mac. Both versions share the same features. Highlight text in ChatGPT, keep your thoughts beside the source, and copy selected quotes and notes together or add them to your draft. You can also **export a conversation or a single reply as a PDF with formulas, highlights and complete notes**.
 
-[Website and examples](https://chatgpt-marker.chaohui-97.chatgpt.site/?lang=en) · [Download Chrome ZIP](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.6.0/ChatGPT-Marker-Chrome-v0.6.0.zip) · [Download Safari DMG preview](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.6.0/ChatGPT-Marker-Safari-v0.6.0-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
+**[Add to Chrome](https://chromewebstore.google.com/detail/chatgpt-marker/dbhfheghjjebbkjjpgmdgeagnckljcoa)** · [Website and examples](https://chatgpt-marker.chaohui-97.chatgpt.site/?lang=en) · [Download Chrome ZIP](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.6.0/ChatGPT-Marker-Chrome-v0.6.0.zip) · [Download Safari DMG preview](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.6.0/ChatGPT-Marker-Safari-v0.6.0-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
 
-Current version: **v0.6.0 · Chrome + Safari**. Chrome: extract the ZIP and load the folder in developer mode. Safari: install the Mac app from the unsigned DMG; unsigned-extension permission must be renewed after fully quitting Safari.
+Current version: **v0.6.0 · Chrome + Safari**. Chrome: install directly from the Chrome Web Store, with no developer mode required. Safari: install the Mac app from the unsigned DMG; unsigned-extension permission must be renewed after fully quitting Safari.
 
 ## Three common problems, three practical answers
 
@@ -125,15 +125,17 @@ Language changes affect interface labels and collection-format headings. **Your 
 
 ### Chrome
 
-1. Download **ChatGPT-Marker-Chrome-v0.6.0.zip**, extract it and keep the **ChatGPT-Marker-Chrome** folder in a permanent location.
-2. Open `chrome://extensions/`, enable **Developer mode**, then click **Load unpacked**.
-3. Select the folder directly containing `manifest.json`, then refresh a saved ChatGPT conversation.
+1. Open **[ChatGPT Marker in the Chrome Web Store](https://chromewebstore.google.com/detail/chatgpt-marker/dbhfheghjjebbkjjpgmdgeagnckljcoa)**.
+2. Click **Add to Chrome**, review the permissions, and confirm **Add extension**.
+3. Open or refresh a saved ChatGPT conversation and start highlighting or adding notes.
 
-Desktop Chrome 105+ on macOS, Windows and Linux; hardware testing is pending. No mobile Chrome support. This preview is not in the Chrome Web Store. Keep the installed folder; reload it after updates. There is no Safari-style 24-hour expiration.
+For desktop Chrome on macOS, Windows and Linux. Use an up-to-date version. Mobile Chrome is not supported. Hardware testing is still pending. The store version requires neither developer mode nor an installation folder.
+
+**Switching from a manual installation:** export a JSON backup from the old version first, then restore it in the store version. Check your notes before removing the old installation. Do not enable both copies at once.
 
 **Move Safari notes to Chrome:** export a JSON backup in Safari, then restore it in Chrome. Notes do not sync automatically between browsers.
 
-[Full Chrome installation guide](INSTALL-CHROME.md)
+[Full Chrome installation guide](INSTALL-CHROME.md) · [Alternative: manual-install ZIP](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.6.0/ChatGPT-Marker-Chrome-v0.6.0.zip)
 
 ### Safari on Mac
 

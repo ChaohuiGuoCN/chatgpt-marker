@@ -6,9 +6,9 @@
 
 对话荧光笔支持电脑版 Chrome 和 Mac Safari，两个版本功能一致，让你在原文上标记重点、留下自己的问题，再把选中的原文和批注一次复制或整理到对话框。也可以把**整段对话或单条回复导出为 PDF，保留公式、高亮和完整批注**。
 
-[下载与功能示例](https://chatgpt-marker.chaohui-97.chatgpt.site) · [下载 Chrome ZIP](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.6.0/ChatGPT-Marker-Chrome-v0.6.0.zip) · [下载 Safari DMG](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.6.0/ChatGPT-Marker-Safari-v0.6.0-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
+**[安装 Chrome 插件](https://chromewebstore.google.com/detail/chatgpt-marker/dbhfheghjjebbkjjpgmdgeagnckljcoa)** · [下载与功能示例](https://chatgpt-marker.chaohui-97.chatgpt.site) · [下载 Chrome ZIP](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.6.0/ChatGPT-Marker-Chrome-v0.6.0.zip) · [下载 Safari DMG](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.6.0/ChatGPT-Marker-Safari-v0.6.0-unsigned.dmg) · [GitHub Releases](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases)
 
-当前版本：**v0.6.0 · Chrome + Safari**。Chrome 解压 ZIP 后通过开发者模式加载；Safari 安装未签名 DMG，完全退出后仍需重新允许未签名扩展。
+当前版本：**v0.6.0 · Chrome + Safari**。Chrome 可直接从 Chrome 应用商店安装，无需开发者模式；Safari 安装未签名 DMG，完全退出后仍需重新允许未签名扩展。
 
 ## 三个常见问题，三个对应的办法
 
@@ -127,15 +127,17 @@ v0.6.0 将常见公式重新排版，字体随扩展提供，不依赖外部公�
 
 ### Chrome
 
-1. 下载 **ChatGPT-Marker-Chrome-v0.6.0.zip**，解压后将 **ChatGPT-Marker-Chrome** 文件夹放在长期保留的位置。
-2. 打开 `chrome://extensions/`，启用右上角“开发者模式”，点击“加载已解压的扩展程序”。
-3. 选择直接包含 `manifest.json` 的文件夹，再刷新已保存的 ChatGPT 对话。
+1. 打开 **[Chrome 应用商店中的 ChatGPT Marker](https://chromewebstore.google.com/detail/chatgpt-marker/dbhfheghjjebbkjjpgmdgeagnckljcoa)**。
+2. 点击 **添加至 Chrome**，查看权限说明后确认 **添加扩展程序**。
+3. 打开或刷新一段已保存的 ChatGPT 对话，开始高亮和批注。
 
-安装目标为 macOS、Windows、Linux 上的 Chrome 105+，本版尚未完成实机验证；暂不支持手机 Chrome。当前未上架 Chrome 应用商店。请保留安装文件夹，更新时重新加载；没有 Safari 临时扩展的 24 小时到期限制。
+适用于 macOS、Windows、Linux 上的电脑版 Chrome，建议使用最新版本；不支持手机 Chrome。本版尚未完成实机验证。商店版无需开启开发者模式或保留安装文件夹。
+
+**从手动安装版迁移：**先在旧版导出 JSON 备份，安装商店版后恢复。确认笔记完整后再移除旧版，不要同时启用两份扩展。
 
 **迁移 Safari 笔记：**在 Safari 导出 JSON 备份，再到 Chrome 恢复。两个浏览器之间不会自动同步。
 
-[Chrome 详细安装说明](INSTALL-CHROME.zh-CN.md)
+[Chrome 详细安装说明](INSTALL-CHROME.zh-CN.md) · [备用：手动安装 ZIP](https://github.com/ChaohuiGuoCN/chatgpt-marker/releases/download/v0.6.0/ChatGPT-Marker-Chrome-v0.6.0.zip)
 
 ### Mac Safari
 
